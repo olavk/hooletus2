@@ -1,5 +1,15 @@
 {
   "name": "hooletus2",
+  "description": "webpack/react hot loading exercise",
+  "license": "MIT",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olavk/hooletus2"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --progress --colors --no-info"
+  },
   "peerDependencies": {
     "eslint-plugin-jsx-a11y": "^2.0.1"
   },
