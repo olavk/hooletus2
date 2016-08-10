@@ -21,6 +21,7 @@
     "id-length": 0,
     "new-cap": 0,
     "camelcase": 0,
+    "global-require": 0,
     "react/sort-comp": [1, {
       order: [
         'static-methods',

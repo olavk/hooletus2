@@ -5,6 +5,7 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
+    'react-hot-loader/patch',
     './entry.js',
   ],
   output: {
@@ -14,7 +15,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.js$/, loaders: ['react-hot-loader', 'babel-loader', 'eslint-loader'], exclude: /node_modules/},
+      {test: /\.js$/, loaders: ['babel-loader', 'eslint-loader'], exclude: /node_modules/},
       {test: /\.scss$/, loaders: ['style-loader', 'css-loader', 'sass-loader']},
     ],
   },
