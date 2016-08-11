@@ -8,7 +8,8 @@
     "url": "https://github.com/olavk/hooletus2"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "./node_modules/.bin/webpack --config webpack.config.prod.js --display-error-details --progress"
   },
   "peerDependencies": {
     "eslint-plugin-jsx-a11y": "^2.0.1"
