@@ -1,7 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import {Provider} from 'react-redux';
-import App from './App';
-import DevTools from './DevTools';
+import {ReduxRouter} from 'redux-router';
 
 export default class Root extends Component {
   render() {
@@ -9,8 +8,7 @@ export default class Root extends Component {
     return (
       <Provider store={store}>
         <div>
-          <App />
-          <DevTools />
+          <ReduxRouter />
         </div>
       </Provider>
     );

@@ -4,9 +4,9 @@ var config = require('./webpack.config');
 
 module.exports = Object.assign({}, config, {
   entry: [
+    'react-hot-loader/patch',
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
-    'react-hot-loader/patch',
     './src/index.js',
   ],
   output: {
