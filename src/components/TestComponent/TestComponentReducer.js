@@ -1,4 +1,4 @@
-import {SET_VALUE} from '../constants/ActionTypes';
+import {SET_VALUE} from '../../constants/ActionTypes';
 
 const initialState = {
   value: 'Enter value ..',

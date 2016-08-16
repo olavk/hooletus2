@@ -1,18 +1,16 @@
 import React, {Component, PropTypes} from 'react';
 import {Provider} from 'react-redux';
-import {ReduxRouter} from 'redux-router';
-import DevTools from './DevTools';
-import routes from './routes';
+import {Router} from 'react-router';
+import getRoutes from './routes';
 
 export default class Root extends Component {
   render() {
     const {store} = this.props;
     return (
       <Provider store={store}>
-        <div>
-          <ReduxRouter routes={routes} />
-          <DevTools />
-        </div>
+        <Router history={history}>
+          {getRoutes()}
+        </Router>
       </Provider>
     );
   }

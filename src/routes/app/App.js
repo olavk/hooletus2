@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
+import {Link} from 'react-router';
 import TestComponent from '../../components/TestComponent';
 
 export default class App extends Component {
@@ -8,6 +9,16 @@ export default class App extends Component {
     };
   }
   render() {
-    return <TestComponent />;
+    const {children} = this.props;
+    return (
+      <div>
+        <TestComponent />
+        <Link to="/app2">app2</Link>
+        {children}
+      </div>
+    );
   }
 }
+App.propTypes = {
+  children: PropTypes.node,
+};

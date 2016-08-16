@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router';
 
 export default class App2 extends Component {
   constructor(props) {
@@ -7,6 +8,10 @@ export default class App2 extends Component {
     };
   }
   render() {
-    return <div>app2</div>;
+    return (
+      <div>
+        <Link to="/">root</Link>
+      </div>
+    );
   }
 }

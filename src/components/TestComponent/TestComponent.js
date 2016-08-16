@@ -1,7 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
-import {setValue} from '../actions/TestComponentActions';
-import '../styles/style.scss';
+import {setValue} from './TestComponentActions';
 
 class TestComponent extends Component {
   constructor(props) {
