@@ -37,7 +37,8 @@
         '/^on.+$/',
         'render'
       ]
-    }]
+    }],
+    "react/forbid-prop-types": [1, {"forbid": ["any"]}]
   },
   "plugins": [
     "react",
